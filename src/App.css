@@ -1,38 +1,104 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #212121;
   min-height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  font-size: 28px;
+  background-color: #141414;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-end;
+  height: 80px;
+  padding-bottom: 20px;
+  box-shadow: 0px 2px 4px #de3ef310;
+}
+
+.logo input {
+  background-color: red;
+  font-size: 12px;
+  background-color: #242424;
+  color: wheat;
+  margin-left: 50px;
+  width: 200px;
+}
+
+.logo b {
+  color: #de3ef3;
+  font-weight: bold;
+}
+
+input {
+  background-color: #de3ef3;
+  font-family: 'Noto Sans', sans-serif;
+  color: #212121;
+  border: 0;
+  padding: 10px 20px;
+  margin: 30px 20px 0 0;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.TodoForm button {
+  color: #212121;
+  background-color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+
+.TodoForm button:focus, .TodoForm button:active {
+  border: 0;
+  outline: none;
+}
+
+input::placeholder {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input:focus, input:active {
+  border: 0;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TodoList {
+  margin-top: 50px;
+}
+
+li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  background-color: white;
+  padding: 15px 20px;
+  color: #212121;
+  width: 340px;
+  border-radius: 15px;
+  margin-right: 38px;
+  margin-bottom: 20px;
+}
+
+li button {
+  outline: 0;
+  border-radius: 50%;
+  border: 0;
+  background-color: #f33e65;
+  padding: 10px 12px;
+  color: white;
+  cursor: pointer;
+}
+
+li button:active, li button:focus {
+  outline: none;
+  border: 0;
 }
