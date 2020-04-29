@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## DESC
+Hi, this is my first project which I shared on Github. This project was created by react. This project is a simple todo app.
+You can add todos, remove todos and search in todos. This app uses the local storage of the browser.
+
 ## Available Scripts
 
 In the project directory, you can run:
